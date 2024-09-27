@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="result" placeholder="0" readonly>
+        <div class="buttons">
+            <button onclick="displayContent('(')" id="openparanth" class="closedparanth">(</button>
+            <button onclick="displayContent(')')" id="clsparanth" class="closedparanth">)</button>
+            <button onclick="removedigit()" id="delete" class="closedparanth"><i class="fa-solid fa-delete-left" style="color: #464749;"></i></button>
+            <button onclick="displayContent('/')" class="closedparanth" id="div">/</button>
+
+            <button onclick="displayContent('7')" id="seven" class="closedparanth">7</button>
+            <button onclick="displayContent('8')" id="eight" class="closedparanth">8</button>
+            <button onclick="displayContent('9')" id="nine" class="closedparanth">9</button>
+            <button onclick="displayContent('*')" class="closedparanth" id="mul">*</button>
+
+            <button onclick="displayContent('4')" id="four" class="closedparanth">4</button>
+            <button onclick="displayContent('5')" id="five" class="closedparanth">5</button>
+            <button onclick="displayContent('6')" id="six" class="closedparanth">6</button>
+            <button onclick="displayContent('-')" class="closedparanth" id="sub">-</button>
+
+            <button onclick="displayContent('1')" id="one" class="closedparanth">1</button>
+            <button onclick="displayContent('2')"  id="two" class="closedparanth">2</button>
+            <button onclick="displayContent('3')" id="three" class="closedparanth">3</button>
+            <button onclick="displayContent('+')" class="closedparanth" id="sum">+</button>
+
+            <button onclick="displayContent('0')" id="zero" class="closedparanth">0</button>
+            <button onclick="displayContent('.')" id="dot" class="closedparanth">.</button>
+            <button onclick="calScreenClear()" class="closedparanth" id="exp">AC</button>
+            <button onclick="caloutput()" class="closedparanth" id="equalto">=</button>
+
+
+        </div>
+    </div>
+</body>
+<script src="./calculator.js"></script>
+</html>

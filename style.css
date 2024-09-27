@@ -1,0 +1,53 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(193, 202, 210);
+}
+.container{
+    width: 24%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px 0px 5px 5px;
+    margin-left: 700px;
+    margin-top: 150px;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.05);
+}
+#result{
+    border: none;
+    height: 120px;
+    width: 97%;
+    font-size: 40px;
+    text-align: right;
+    outline: none;
+    font-weight: 600;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,110px);
+    height: 250px;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+.buttons button{
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+#exp{
+    color: rgb(132, 133, 133);
+}
+#result{
+    background-color: rgb(159, 159, 162);
+}
+#sum{
+    background-color: rgb(216, 218, 220);}
+#sub{
+    background-color: rgb(216, 218, 220);}
+#mul{
+    background-color: rgb(216, 218, 220);
+}
+#div{
+    background-color: rgb(216, 218, 220);
+}
